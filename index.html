@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madzko</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Assets/Madzko-logo.png" alt="logo"></a>
+
+            <div class="links-container">
+                <a href="index.html" class="hideSidebar">Home</a>
+                <a href="#about-link" class="hideSidebar">About</a>
+                <a href="#projects-link" class="hideSidebar">Projects</a>
+                <a href="#achievements-link" class="hideSidebar">Career</a>
+                <a href="#get-in-touch-link" class="contact-button hideSidebar">Get in touch</a>
+                <a href="#" class="menuButton" onclick=showSidebar()><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <a href="#" onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></a>
+        <a href="index.html">Home</a>
+        <a href="#about-link">About</a>
+        <a href="#projects-link">Projects</a>
+        <a href="#achievements-link">Achievements</a>
+        <a href="#get-in-touch-link" class="contact-button">Get in touch</a>
+    </div>
+    <!-- END NAV -->
+    <!-- HERO -->
+    <header>
+        <div class="container">
+            <h1>Self-taught Front End Developer</h1>
+            <p>I build websites with a focus on responsive design and accessibility.</p>
+            <a href="#projects-link">View my work</a>
+        </div>
+    </header>
+    <!-- END HERO -->
+    <!-- ABOUT ME SECTION -->
+    <section class="about-section">
+        <div class="container" id="about-link">
+            <h1>About Me</h1>
+
+            <div class="content">
+                <img src="Assets/photo_.jpg" alt="my-photo">
+
+                <p>
+                    I’m a Front-End Developer with a passion for creating clean, 
+                    responsive, and user-friendly websites. With a strong foundation 
+                    in HTML, CSS, and JavaScript, I enjoy bringing designs to life 
+                    and optimizing user experiences across all devices. I'm constantly 
+                    learning new technologies and keeping up with the latest trends in 
+                    web development. Whether it's building from scratch or enhancing 
+                    existing sites, I love turning ideas into interactive, engaging 
+                    digital products.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT ME SECTION -->
+    <!-- MY PROJECTS SECTION -->
+    <section class="projects-section">
+        <div class="container" id="projects-link">
+            <h1>My Projects</h1>
+
+            <div class="cards-container">
+                <div class="project-card">
+                    <h3>ILA - International Law Agency</h3>
+
+                    <p>
+                        A sleek, responsive website for an international law 
+                        firm. Designed to reflect professionalism and trust, 
+                        with multilingual support, attorney profiles, and 
+                        client contact features.
+                    </p>
+
+                    <a href="" class="view-button">View Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END MY PROJECTS SECTION -->
+    <!-- MY ACHIEVEMENTS SECTION -->
+    <section class="achievements-section">
+        <div class="container" id="achievements-link">
+            <div class="achievements-cards-container">
+                <div class="achievements">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>+0</span>
+                    <p>Problems Solved</p>
+                </div>
+
+                <div class="achievements">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>+0</span>
+                    <p>Work Completed</p>
+                </div>
+
+                <div class="achievements">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>+0</span>
+                    <p>Frameworks Learned</p>
+                </div>
+
+                <div class="achievements">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>+0</span>
+                    <p>Happy Clients Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END MY ACHIEVEMENTS SECTION -->
+    <!-- GET IN TOUCH SECTION -->
+    <section class="get-in-touch-section">
+        <div class="container" id="get-in-touch-link">
+            <h1>Get In Touch</h1>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="input-container" id="myForm" onsubmit="handleSubmit()">
+                
+                <input type="hidden" name="access_key" value="17c95856-c6c5-4ca5-99ce-232e5197cc77">
+                
+                <div class="field name">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                </div>
+
+                <div class="field email">
+                    <input type="email" placeholder="Your Email" name="email" required>
+                </div>
+
+                <div class="field text-area">
+                    <textarea id="text-area" name="message" placeholder="Write your massage here..."></textarea required>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Send message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- END GET IN TOUCH SECTION -->
+    <!-- FOOTER -->
+    <footer>
+        <a href="" class="logo"><img src="Assets/Madzko-logo.png" alt="logo"></a>
+
+        <div class="span">
+            <span>
+                Designed and developed with <i class="fa-solid fa-heart"></i> by <a href="index.html">Madzko</a>
+            </span>
+            <span>© 2025 Madzko. All rights reserved.</span>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- JS -->
+    <script src="JS/main.js"></script>
+    <!-- END JS -->
+</body>
+</html>
