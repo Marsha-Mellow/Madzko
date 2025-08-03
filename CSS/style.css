@@ -104,17 +104,23 @@ nav .container .links-container .contact-button:hover {
   bottom: 15px;
   z-index: 1010;
   width: 250px;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.50);
   backdrop-filter: blur(10px);
   display: none;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
-.sidebar a {
+.sidebar .links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar .links a {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 800;
@@ -122,16 +128,16 @@ nav .container .links-container .contact-button:hover {
   width: 100%;
 }
 
-.sidebar a:first-child {
+.sidebar .links a:first-child {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
 }
 
-.sidebar a:hover {
+.sidebar .links a:hover {
   color: #AEAEAE;
 }
 
-.sidebar .contact-button {
+.sidebar .links .contact-button {
   background-color: var(--accent-color);
   color: var(--primary-color);
   width: 100%;
@@ -139,9 +145,21 @@ nav .container .links-container .contact-button:hover {
   border-radius: 15px;
 }
 
-.sidebar .contact-button:hover {
+.sidebar .links .contact-button:hover {
   color: #141415;
   background-color: #AEAEAE;
+}
+
+.sidebar .social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.sidebar .social a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .menuButton {
@@ -228,6 +246,7 @@ header a:hover {
 
 .about-section .content p {
   font-size: clamp(0.8rem, 1vw, 2rem);
+  color: var(--accent-color);
   width: 65%;
   min-width: 300px;
   margin: 20px;
@@ -278,9 +297,16 @@ header a:hover {
   position: relative;
 }
 
-.projects-section .cards-container .project-card h3, p {
+.projects-section .cards-container .project-card h3 {
   color: var(--accent-color);
   margin: 15px 0;
+  font-size: 1rem;
+}
+
+.projects-section .cards-container .project-card p {
+  color: var(--accent-color);
+  margin: 15px 0;
+  font-size: 0.9rem;
 }
 
 .projects-section .cards-container .project-card a {
